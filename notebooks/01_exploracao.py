@@ -33,3 +33,4 @@ base.info()
 # %%
 len(base.columns)
 # %%
+base["data_fechamento"].dropna()

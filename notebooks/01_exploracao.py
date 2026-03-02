@@ -23,3 +23,13 @@ base.groupby(by="categoria").count()
 # %%
 base.groupby(by="status").count()
 # %%
+base.describe(include="all")
+# %%
+base.isna().sum()
+# %%
+base.duplicated().sum()
+# %%
+base.info()
+# %%
+len(base.columns)
+# %%

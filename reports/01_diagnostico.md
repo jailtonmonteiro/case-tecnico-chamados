@@ -41,3 +41,7 @@ A base contém 50.500 registros de chamados técnicos com as seguintes colunas:
 | data_fechamento       | 2545  | Coluna em formato string  |
 | tecnico_responsavel   | 8270  | Falta de atribuição       |
 
+### 3.2 Inconsistência de Datas
+
+* Registros possuem `data_fechamento` anterior à `data_abertura`.
+* 

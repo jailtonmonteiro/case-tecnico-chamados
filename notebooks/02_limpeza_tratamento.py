@@ -1,7 +1,7 @@
 # %%
 import pandas as pd
 base = pd.read_csv("../data/raw/base_chamados.csv", sep=";")
-base.head()
+base.info()
 
 # %%
 base = base.drop_duplicates(subset=["id_chamado"])
@@ -19,9 +19,11 @@ base["data_abertura"] = pd.to_datetime(
     base["data_abertura"],
     format='mixed'
 )
+base.info()
 # %%
 filtro = base["data_abertura"] < base["data_fechamento"]
 base = base[filtro]
+base.info()
 # %%
 base["empresa"] = base["empresa"].str.lower().str.replace(" ", "_")
 base["setor"] = base["setor"].str.lower()
@@ -30,4 +32,5 @@ base["prioridade"] = base["prioridade"].str.lower()
 base["status"] = base["status"].str.lower()
 base["tecnico_responsavel"] = base["tecnico_responsavel"].str.lower()
 # %%
-base.to_csv("../data/processed/base_tratada.csv", sep=";")
+base.to_csv("../data/processed/base_tratada.csv", sep=";", index=False)
+# %%

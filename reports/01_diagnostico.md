@@ -46,4 +46,11 @@ A base contém 50.500 registros de chamados técnicos com as seguintes colunas:
 * Registros possuem `data_fechamento` anterior à `data_abertura`.
 * Registros sem datas de fechamento.
 
-### 3.3
+### 3.3 Inconsistência em atribuição 
+
+* Registros possuem `tecnico_responsavel` como valor nulo
+
+### 3.4 Padronização de campos
+
+* Registros sem padrão de letras.
+* Registros com espaços em brancos.

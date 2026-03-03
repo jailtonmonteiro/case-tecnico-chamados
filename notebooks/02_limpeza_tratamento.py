@@ -23,5 +23,11 @@ base["data_abertura"] = pd.to_datetime(
 filtro = base["data_abertura"] < base["data_fechamento"]
 base = base[filtro]
 # %%
-base.to_csv("../data/processed/base_tratada.csv", sep=";")
+base["empresa"] = base["empresa"].str.lower().str.replace(" ", "_")
+base["setor"] = base["setor"].str.lower()
+base["categoria"] = base["categoria"].str.lower().str.replace(" ", "_")
+base["prioridade"] = base["prioridade"].str.lower()
+base["status"] = base["status"].str.lower()
+base["tecnico_responsavel"] = base["tecnico_responsavel"].str.lower()
 # %%
+base.to_csv("../data/processed/base_tratada.csv", sep=";")

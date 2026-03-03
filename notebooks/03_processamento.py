@@ -1,5 +1,6 @@
 # %%
 import pandas as pd
+# %%
 base = pd.read_csv("../data/processed/base_tratada.csv", sep=";", parse_dates=["data_abertura", "data_fechamento"])
 base.info()
 # %%
@@ -22,4 +23,6 @@ base.groupby("tecnico_responsavel").size()
 # %%
 base.groupby(["status", "empresa"]).size()
 # %%
-base
+base.to_csv("../data/processed/nova_base.csv", sep=";", index=False)
+
+# %%

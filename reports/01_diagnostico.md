@@ -1,13 +1,13 @@
 # RELATÓRIO PRELIMINAR DE ANÁLISE DE DADOS
 
-**Projeto:** Análise de Base de Chamados de TI
-**Base:** base_chamados.csv
-**Volume:** 50.500 registros
+**Projeto:** Análise de Base de Chamados de TI  
+**Base:** base_chamados.csv  
+**Volume:** 50.500 registros  #### 
 **Data da análise:** 02/03/2026
 
 ## 1. Objetivo
 
-Realizar uma análise exploratória inicial da base de chamados de TI, identificando:
+#### Realizar uma análise exploratória inicial da base de chamados de TI, identificando:
 
 * Problemas estruturais
 * Inconsistências
@@ -18,7 +18,7 @@ Realizar uma análise exploratória inicial da base de chamados de TI, identific
 
 ## 2. Visão Geral da Base
 
-A base contém 50.500 registros de chamados técnicos com as seguintes colunas:
+#### A base contém 50.500 registros de chamados técnicos com as seguintes colunas:
 
 | Coluna               | Descrição                  |
 | -------------------- |:--------------------------:|
